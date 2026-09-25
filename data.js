@@ -153,11 +153,11 @@ window.DINNER_CANDIDATES = [
       ["会場 Catch のダイニングルーム", "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_1920%2Ch_1080%2Cq_70%2Cf_auto%2Cg_auto/Imagery/Property%20Photography/Hilton%20International/MultiHotel/OOLHI_Catch_Restaurant_Main_Dining_Area_1.jpg"],
       ["Catch の料理写真（会場レストラン）", "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_720%2Ch_540%2Cq_80%2Cf_auto%2Cg_auto/Imagery/Property%20Photography/MultiBrand/O/OOLHIHI/CATCH___Food_Layout.jpg"],
       ["Catch のテーブル料理", "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_720%2Ch_540%2Cq_80%2Cf_auto%2Cg_auto/Imagery/Property%20Photography/MultiBrand/O/OOLHIHI/CATCH___Food_Table_Shot_far_out_shot__2_.jpg"],
-      ["Le Petit Chef & Family のブランド画像", "https://www.lepetitchef.pro/api/storage/db-images/380374e5-70eb-4a6b-8da6-688767e0dd2b"],
-      ["料理演出のイメージ", "https://www.lepetitchef.pro/api/storage/db-images/2d446212-c425-4911-87f0-02dc133e33e2"],
-      ["ショーのイメージ", "https://www.lepetitchef.pro/api/storage/db-images/9eb31994-eb6c-4215-91df-088e967c421c"],
-      ["ディナー体験のイメージ", "https://www.lepetitchef.pro/api/storage/db-images/eb9488d4-5c30-4d2b-9b37-eb2383f87872"],
-      ["舞台裏カルーセルの写真", "https://www.lepetitchef.pro/api/storage/db-images/c7762b2c-cf8e-4922-ba3f-14c2b4471217"]
+      ["Catchの入口（会場レストラン）","https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill,w_1920,h_1080,q_100,f_auto,g_auto/Imagery/Property%20Photography/Hilton%20International/MultiHotel/OOLHI_Catch_Restaurant_Entrance.jpg"],
+      ["Catchのビュッフェエリア（会場参考）","https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill,w_1920,h_1080,q_100,f_auto,g_auto/Imagery/Property%20Photography/Hilton%20International/MultiHotel/OOLHI_Catch_Restaurant_Buffet_Area.jpg"],
+      ["Catchの壁面と席（会場レストラン）","https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill,w_1920,h_1080,q_100,f_auto,g_auto/Imagery/Property%20Photography/Hilton%20International/MultiHotel/OOLHI_Catch_Restaurant_Feature_Wall.jpg"],
+      ["Catchの客席（会場レストラン）","https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill,w_1920,h_1080,q_100,f_auto,g_auto/Imagery/Property%20Photography/Hilton%20International/O/OOLHIHI/CATCH_Seats.jpg"],
+      ["Catchの公式掲載写真（会場レストラン）","https://hiltonsurfersparadise.com.au/app/uploads/2023/09/catch-restaurant.jpg"]
     ]
   },
   {
