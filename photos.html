@@ -9,7 +9,7 @@
   <style>
     :root{--ink:#132736;--muted:#536877;--paper:#f5f7f7;--night:#102231;--line:#dbe3e7;--white:#fff;--accent:#ffe0a3}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif}a{color:inherit}button{font:inherit}::selection{background:#ffe0a3;color:#152735}
-    .top{background:#102231;color:white;padding:14px max(20px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.top a:last-child{font-size:12px;text-decoration:none;border:1px solid #ffffff75;border-radius:999px;padding:7px 12px}
+    .top{background:#102231;color:white;padding:14px max(20px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.brand{text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.top .feature-link{font-size:12px;text-decoration:none;border:1px solid #ffffff75;border-radius:999px;padding:7px 12px}.top a:last-child{font-size:12px;text-decoration:none;border:1px solid #ffffff75;border-radius:999px;padding:7px 12px}
     .hero{background:radial-gradient(ellipse at 85% 0%,#427d88 0,transparent 40%),linear-gradient(130deg,#102231 15%,#123845 75%,#315260);color:#fff;padding:49px max(20px,calc((100vw - 1160px)/2)) 42px;position:relative;overflow:hidden}
     .hero:after{content:"";position:absolute;right:-28px;bottom:-38px;width:min(65vw,640px);height:175px;opacity:.17;background:linear-gradient(#ffe0a3,#ffe0a3);clip-path:polygon(0 70%,8% 70%,8% 30%,14% 30%,14% 70%,22% 70%,22% 12%,31% 12%,31% 70%,39% 70%,39% 43%,48% 43%,48% 70%,56% 70%,56% 0,67% 0,67% 70%,74% 70%,74% 37%,82% 37%,82% 70%,89% 70%,89% 20%,97% 20%,97% 70%,100% 70%,100% 100%,0 100%)}
     .eyebrow{font-size:12px;letter-spacing:.22em;color:#b9e6e4;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(34px,7vw,66px);letter-spacing:-.055em;line-height:1.16;margin:12px 0 17px;position:relative;z-index:1}.hero p{margin:0;color:#ecf4f4;max-width:710px;position:relative;z-index:1}.hero strong{color:#ffe0a3}.nums{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px;position:relative;z-index:1}.nums span{border:1px solid #ffffff5b;background:#ffffff14;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:750}
@@ -24,7 +24,7 @@
   </style>
 </head>
 <body>
-  <header class="top"><a class="brand" href="./index.html">QLD Dinner Shortlist</a><a href="./index.html">比較ページに戻る ↗</a></header>
+  <header class="top"><a class="brand" href="./index.html">QLD Dinner Shortlist</a><a class="feature-link" href="./skypoint.html">SkyPoint写真特集 ↗</a><a href="./index.html">比較ページに戻る ↗</a></header>
   <section class="hero"><div class="eyebrow">Photo links · Brisbane & Gold Coast</div><h1>13候補を、<br>写真で見ていこう。</h1><p><strong>各施設12件、合計156件。</strong> 気になるカードをタップすると、掲載元の写真が新しいタブで開きます。</p><div class="nums"><span>BRISBANE · 6施設</span><span>GOLD COAST · 7施設</span><span>横にスワイプして見る →</span></div></section>
   <p class="notice"><b>写真の見方</b>：カードは元画像へのリンクです。店内・料理・景色に加え、一部には同じショーの参考写真や会場の写真が含まれます。区別はカードのラベルで確認できます。</p>
   <nav class="jump" aria-label="施設へ移動"><h2>気になる施設へジャンプ</h2><div class="jump-list" id="jump-list"></div></nav>
