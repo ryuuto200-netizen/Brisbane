@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101d2b">
+<meta name="description" content="SkyPoint Bistro+Barの料理と、Q1タワーLevel 77からの眺望写真を見比べるページ。">
+<title>SkyPoint Bistro+Bar｜料理と眺望</title>
+<style>
+:root{--ink:#162636;--muted:#647583;--paper:#f4f6f6;--navy:#101d2b;--deep:#162e3e;--teal:#8fd2d1;--sand:#f5cf91;--line:#dfe6e7;--card:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif}a{color:inherit}button{font:inherit}
+header{background:var(--navy);color:white;padding:13px max(20px,calc((100vw - 1160px)/2));display:flex;justify-content:space-between;align-items:center;gap:14px}.brand{font-size:11px;letter-spacing:.16em;font-weight:900;text-decoration:none}.header-link{border:1px solid #ffffff66;border-radius:999px;padding:7px 11px;text-decoration:none;font-size:12px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 82% 5%,#347684 0,transparent 37%),linear-gradient(130deg,#101d2b,#153b4b 74%,#285768);color:#fff;padding:62px max(20px,calc((100vw - 1160px)/2)) 52px;min-height:435px}
+.hero:after{content:"";position:absolute;right:-3%;bottom:-1px;width:min(78vw,850px);height:190px;opacity:.28;background:linear-gradient(#f5cf91,#f5cf91);clip-path:polygon(0 74%,5% 74%,5% 44%,10% 44%,10% 74%,15% 74%,15% 18%,22% 18%,22% 74%,29% 74%,29% 34%,36% 34%,36% 74%,43% 74%,43% 4%,51% 4%,51% 74%,58% 74%,58% 30%,64% 30%,64% 74%,71% 74%,71% 13%,78% 13%,78% 74%,87% 74%,87% 40%,93% 40%,93% 74%,100% 74%,100% 100%,0 100%)}
+.hero-content{max-width:760px;position:relative;z-index:1}.eyebrow{font-size:12px;letter-spacing:.22em;color:var(--teal);font-weight:850}.hero h1{font-size:clamp(38px,7.3vw,78px);line-height:1.04;letter-spacing:-.065em;margin:12px 0 15px}.hero h1 span{color:var(--sand)}.lead{color:#e0ecee;max-width:610px;margin:0}.hero-stats{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}.hero-stats span{border:1px solid #ffffff54;background:#ffffff12;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:800}
+.hero-art{position:absolute;right:max(24px,calc((100vw - 1160px)/2));top:62px;width:230px;height:230px;border:1px solid #ffffff39;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#ffffff10,transparent 70%);z-index:1}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #ffffff38;border-radius:50%;inset:18px}.hero-art:after{inset:40px}.art-inner{position:relative;text-align:center}.art-inner b{font-size:44px;line-height:1;letter-spacing:-.06em;color:var(--sand);display:block}.art-inner span{font-size:11px;letter-spacing:.16em}
+.quicknav{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:10px max(20px,calc((100vw - 1160px)/2));display:flex;gap:8px;overflow:auto}.quicknav a{white-space:nowrap;text-decoration:none;border:1px solid #d6e0e3;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:800}.quicknav a:hover{background:var(--deep);color:white}
+main{max-width:1160px;margin:auto;padding:0 20px 70px}.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;margin:26px 0 36px}.intro article{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px 19px}.intro h2{font-size:13px;margin:0 0 5px}.intro p{font-size:12px;color:var(--muted);margin:0}.intro .big{font-size:26px;line-height:1.1;font-weight:900;color:#245e70}
+.section{padding-top:15px;margin-top:42px;scroll-margin-top:65px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:15px}.kicker{font-size:11px;letter-spacing:.18em;font-weight:900;color:#287884}.section h2{font-size:clamp(27px,4vw,42px);letter-spacing:-.05em;line-height:1.08;margin:4px 0 0}.section-intro{font-size:12px;color:var(--muted);margin:0;max-width:440px;text-align:right}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.photo-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:17px;box-shadow:0 10px 26px #152b390b;transition:transform .17s,box-shadow .17s}.photo-card:hover,.photo-card:focus-visible{transform:translateY(-3px);box-shadow:0 15px 30px #152b3920;outline:2px solid #4e929a;outline-offset:2px}
+.art{height:180px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,#f7e4bd,#e8f1ed 60%,#cbe2e7)}.view-card .art{background:linear-gradient(145deg,#d5e8e7,#9ac4cd 48%,#325c70)}.space-card .art{background:linear-gradient(145deg,#e5ddef,#d6e8e5 65%,#b4c9d0)}
+.art:before{content:"";position:absolute;inset:auto -5% -1px;height:46%;background:#173f4f1f;clip-path:polygon(0 62%,12% 62%,12% 28%,17% 28%,17% 62%,27% 62%,27% 8%,34% 8%,34% 62%,46% 62%,46% 37%,53% 37%,53% 62%,63% 62%,63% 0,72% 0,72% 62%,82% 62%,82% 24%,89% 24%,89% 62%,100% 62%,100% 100%,0 100%)}
+.food-card .art:before{background:#9c684023;clip-path:ellipse(48% 19% at 50% 100%)}
+.food-card .art:after{content:"";position:absolute;width:99px;height:99px;border-radius:50%;border:8px solid #fff9;box-shadow:0 0 0 7px #855e3640,inset 0 0 0 2px #a4744640;top:34px}
+.view-card .art:after{content:"";position:absolute;left:0;right:0;bottom:32%;height:1px;background:#ffffff70;box-shadow:0 15px 35px #d7efff90}
+.art-mark{position:relative;z-index:1;font-size:45px;font-weight:950;letter-spacing:-.08em;color:#244c5a;text-shadow:0 1px #fff8}.view-card .art-mark{color:#fff;text-shadow:0 2px 14px #14263180}.art-label{position:absolute;left:13px;top:12px;z-index:2;border-radius:999px;padding:4px 8px;background:#ffffffdc;color:#1f4855;font-size:10px;font-weight:900;letter-spacing:.08em}.view-card .art-label{background:#102c3bb8;color:#fff}.photo-number{position:absolute;right:12px;bottom:6px;z-index:2;font-size:32px;font-weight:950;letter-spacing:-.07em;color:#ffffffa6}
+.card-body{padding:12px 14px 13px}.card-title{font-size:14px;line-height:1.4;font-weight:850;margin:0 0 8px;min-height:40px}.card-source{border-top:1px solid #e7ecee;padding-top:8px;display:flex;justify-content:space-between;align-items:center;color:#59717e;font-size:10px;font-weight:750}.card-source b{font-size:16px;color:#1e6474}
+.food-card .card-source b{color:#9d642d}
+.caveat{margin:16px 0 0;background:#fff9ec;border:1px solid #f0dfbf;border-radius:12px;padding:11px 13px;color:#705b3d;font-size:11px}
+.footer{background:#101d2b;color:#d9e4e7;padding:26px max(20px,calc((100vw - 1160px)/2));font-size:11px}.footer p{margin:0}.footer a{color:#a9e0dd}
+@media(max-width:760px){.hero{padding-top:43px;min-height:390px}.hero-art{right:17px;top:34px;width:130px;height:130px;opacity:.65}.hero-art:before{inset:12px}.hero-art:after{inset:25px}.art-inner b{font-size:27px}.art-inner span{font-size:8px}.hero-content{max-width:78%}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.art{height:145px}.intro{grid-template-columns:1fr}.section-head{display:block}.section-intro{text-align:left;margin-top:7px}.card-body{padding:10px 11px}.card-title{font-size:12px;min-height:37px}}
+@media(max-width:390px){.hero-content{max-width:100%}.hero-art{top:auto;bottom:28px;width:110px;height:110px}.photo-grid{gap:8px}.art{height:128px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.photo-card{transition:none}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="./index.html">QLD DINNER SHORTLIST</a><a class="header-link" href="./photos.html">13候補の写真一覧へ ↗</a></header>
+<section class="hero">
+ <div class="hero-content"><div class="eyebrow">SKYPOINT BISTRO+BAR · PHOTO GUIDE</div><h1>空の上で、<br><span>食べる。眺める。</span></h1><p class="lead">料理・展望・会場の写真を分けて、気になる場面から見られるSkyPoint特集です。各カードを押すと写真の掲載元が開きます。</p><div class="hero-stats"><span>LEVEL 77</span><span>地上約230m</span><span>料理 5枚</span><span>眺望・会場 8枚</span></div></div>
+ <div class="hero-art" aria-hidden="true"><div class="art-inner"><b>77</b><span>LEVEL · SKYPOINT</span></div></div>
+</section>
+<nav class="quicknav" aria-label="ページ内移動"><a href="#food">料理を見る</a><a href="#views">眺望を見る</a><a href="#spaces">会場の雰囲気</a></nav>
+<main>
+ <div class="intro">
+  <article><div class="big">230m</div><h2>Q1タワーのLevel 77</h2><p>SkyPoint公式案内では、朝食会場は海岸線・市街・内陸の景色を望む高さにあります。</p></article>
+  <article><h2>写真の見方</h2><p>このページは写真を転載せず、各カードから掲載元の画像へ移動します。眺望の写真と、施設・イベント会場の写真はラベルで分けています。</p></article>
+ </div>
+ <section class="section" id="food"><div class="section-head"><div><div class="kicker">01 · FOOD</div><h2>料理・ビュッフェ</h2></div><p class="section-intro">ビュッフェの全体、料理台、食事スペースをまとめました。</p></div><div class="photo-grid" id="food-grid"></div></section>
+ <section class="section" id="views"><div class="section-head"><div><div class="kicker">02 · VIEWS</div><h2>展望・景色</h2></div><p class="section-intro">Level 77からの眺望や、窓越しに景色を楽しむフロアを見られます。</p></div><div class="photo-grid" id="view-grid"></div><p class="caveat">眺望は天候・時間帯・写真の撮影場所で見え方が変わります。夕景写真はQueensland公式観光サイト掲載の画像です。</p></section>
+ <section class="section" id="spaces"><div class="section-head"><div><div class="kicker">03 · SPACE</div><h2>施設・会場の雰囲気</h2></div><p class="section-intro">展望台のイベント会場写真です。飲食席の写真とは区別して掲載しています。</p></div><div class="photo-grid" id="space-grid"></div></section>
+</main>
+<footer><p>開館時間や朝食の提供時間などは変わることがあります。最新情報は<a href="https://www.skypoint.com.au/breakfast" target="_blank" rel="noopener noreferrer">SkyPoint公式の朝食案内</a>で確認してください。写真の著作権は各掲載元に帰属します。</p></footer>
+<script src="./data.js"></script>
+<script>
+(function(){
+ 'use strict';
+ const venue=(window.DINNER_CANDIDATES||[]).find(x=>x.id==='skypoint');
+ if(!venue)return;
+ const p=venue.photos;
+ const food=p.slice(0,5).map((x,i)=>({caption:x[0],url:x[1],type:'food',tag:'料理・ビュッフェ'}));
+ const views=[
+  {caption:p[5][0],url:p[5][1],type:'view',tag:'展望デッキ'},
+  {caption:p[7][0],url:p[7][1],type:'view',tag:'眺望・フロア'},
+  {caption:p[8][0],url:p[8][1],type:'view',tag:'展望デッキ'},
+  {caption:p[9][0],url:p[9][1],type:'view',tag:'Level 77'},
+  {caption:p[6][0],url:p[6][1],type:'view',tag:'SkyPoint公式'},
+  {caption:'夕暮れのSkyPointとゴールドコーストの景色',url:'https://www.queensland.com/content/dam/teq/consumer/global/images/destinations/gold-coast/blog-images/2023_GC_SurfersParadise_SkypointObservationDeck_SetInStoneMedia_153785.jpg',type:'view',tag:'Queensland公式'}
+ ];
+ const spaces=p.slice(10,12).map((x,i)=>({caption:x[0],url:x[1],type:'space',tag:'イベント会場'}));
+ function addPhoto(item,index,root){
+  const url=new URL(item.url);if(url.protocol!=='https:')return;
+  const a=document.createElement('a');a.className='photo-card '+(item.type==='food'?'food-card':item.type==='view'?'view-card':'space-card');
+  a.href=url.href;a.target='_blank';a.rel='noopener noreferrer';
+  a.setAttribute('aria-label',item.caption+'。掲載元の写真を新しいタブで開く');
+  const art=document.createElement('div');art.className='art';
+  const tag=document.createElement('span');tag.className='art-label';tag.textContent=item.tag;art.appendChild(tag);
+  const mark=document.createElement('span');mark.className='art-mark';mark.textContent=item.type==='food'?'FOOD':item.type==='view'?'VIEW':'SPACE';art.appendChild(mark);
+  const num=document.createElement('span');num.className='photo-number';num.textContent=String(index+1).padStart(2,'0');art.appendChild(num);
+  const body=document.createElement('div');body.className='card-body';
+  const title=document.createElement('p');title.className='card-title';title.textContent=item.caption;body.appendChild(title);
+  const source=document.createElement('div');source.className='card-source';
+  const label=document.createElement('span');label.textContent=url.hostname.replace(/^www\./,'')+' · 写真を開く';source.appendChild(label);
+  const arrow=document.createElement('b');arrow.textContent='↗';source.appendChild(arrow);
+  body.appendChild(source);a.appendChild(art);a.appendChild(body);root.appendChild(a);
+ }
+ food.forEach((x,i)=>addPhoto(x,i,document.getElementById('food-grid')));
+ views.forEach((x,i)=>addPhoto(x,i,document.getElementById('view-grid')));
+ spaces.forEach((x,i)=>addPhoto(x,i,document.getElementById('space-grid')));
+})();
+</script>
+</body>
+</html>
