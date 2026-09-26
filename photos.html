@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102231">
+  <meta name="description" content="ブリスベンとゴールドコーストのディナー13候補。各候補12件の写真掲載元へ直接アクセス。">
+  <title>写真で見る13候補｜Brisbane & Gold Coast Dinner</title>
+  <style>
+    :root{--ink:#132736;--muted:#536877;--paper:#f5f7f7;--night:#102231;--line:#dbe3e7;--white:#fff;--accent:#ffe0a3}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif}a{color:inherit}button{font:inherit}::selection{background:#ffe0a3;color:#152735}
+    .top{background:#102231;color:white;padding:14px max(20px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.top a:last-child{font-size:12px;text-decoration:none;border:1px solid #ffffff75;border-radius:999px;padding:7px 12px}
+    .hero{background:radial-gradient(ellipse at 85% 0%,#427d88 0,transparent 40%),linear-gradient(130deg,#102231 15%,#123845 75%,#315260);color:#fff;padding:49px max(20px,calc((100vw - 1160px)/2)) 42px;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;right:-28px;bottom:-38px;width:min(65vw,640px);height:175px;opacity:.17;background:linear-gradient(#ffe0a3,#ffe0a3);clip-path:polygon(0 70%,8% 70%,8% 30%,14% 30%,14% 70%,22% 70%,22% 12%,31% 12%,31% 70%,39% 70%,39% 43%,48% 43%,48% 70%,56% 70%,56% 0,67% 0,67% 70%,74% 70%,74% 37%,82% 37%,82% 70%,89% 70%,89% 20%,97% 20%,97% 70%,100% 70%,100% 100%,0 100%)}
+    .eyebrow{font-size:12px;letter-spacing:.22em;color:#b9e6e4;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(34px,7vw,66px);letter-spacing:-.055em;line-height:1.16;margin:12px 0 17px;position:relative;z-index:1}.hero p{margin:0;color:#ecf4f4;max-width:710px;position:relative;z-index:1}.hero strong{color:#ffe0a3}.nums{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px;position:relative;z-index:1}.nums span{border:1px solid #ffffff5b;background:#ffffff14;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:750}
+    .notice{max-width:1160px;margin:21px auto 0;padding:0 20px;color:#536877;font-size:13px}.notice b{color:#21455a}
+    .jump{max-width:1160px;margin:20px auto 34px;padding:0 20px}.jump h2{font-size:12px;letter-spacing:.14em;color:#647582;margin:0 0 10px}.jump-list{display:flex;gap:7px;overflow-x:auto;scrollbar-width:thin;padding:0 0 8px}.jump a{flex:none;background:#fff;border:1px solid #d9e1e6;border-radius:999px;text-decoration:none;padding:7px 12px;font-size:12px;font-weight:750}.jump a:hover,.jump a:focus-visible{background:#173f50;color:white}
+    main{max-width:1160px;padding:0 20px 75px;margin:auto}.city-title{font-size:12px;letter-spacing:.17em;text-transform:uppercase;color:#337d86;margin:43px 0 10px;font-weight:900;border-bottom:1px solid var(--line);padding-bottom:10px}.city-title.gc{color:#b17043}
+    .venue{scroll-margin-top:18px;background:#fff;border:1px solid #e1e7e9;border-radius:22px;margin:0 0 22px;box-shadow:0 12px 32px #193a4a0c;overflow:hidden}.venue-head{padding:22px 22px 8px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.venue h3{font-size:clamp(20px,4vw,30px);line-height:1.2;letter-spacing:-.035em;margin:3px 0 4px}.venue .meta{font-size:12px;color:#647684;font-weight:800}.venue .count{flex:none;border-radius:999px;background:#e6f3f3;color:#175666;padding:5px 9px;font-weight:900;font-size:12px}.venue.gold .count{background:#fff0e2;color:#88502a}.venue-note{margin:4px 22px 13px;font-size:12px;color:#526776;background:#f4f7f7;padding:8px 11px;border-radius:10px}.venue-note:empty{display:none}
+    .gallery-wrap{position:relative}.gallery{display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory;padding:6px 22px 22px;scrollbar-width:thin;scrollbar-color:#a0b8bf #edf1f2}.photo-card{display:flex;flex-direction:column;flex:none;width:clamp(190px,27vw,242px);min-height:205px;border:1px solid #dbe5e9;border-radius:17px;text-decoration:none;background:#eef6f6;padding:15px;scroll-snap-align:start;transition:transform .18s,box-shadow .18s,border-color .18s}.photo-card:hover,.photo-card:focus-visible{transform:translateY(-3px);box-shadow:0 12px 25px #17415b1c;border-color:#6a9ba4;outline:none}.photo-card.venue-photo{background:#e9f2f8}.photo-card.reference{background:#fff2df}.photo-card.older{background:#f4edee}.photo-kicker{display:flex;align-items:center;justify-content:space-between;gap:5px;font-size:10px;font-weight:850;letter-spacing:.05em}.photo-kicker span{display:inline-block;background:#ffffffb8;border-radius:999px;padding:3px 7px}.photo-num{font:900 53px/1.3 ui-sans-serif,system-ui;color:#335c68;letter-spacing:-.07em;margin:7px 0 3px}.photo-card.reference .photo-num{color:#b2743e}.photo-card.older .photo-num{color:#986f79}.photo-caption{font-size:13px;font-weight:800;line-height:1.45;flex:1}.photo-source{font-size:10px;color:#526a79;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-top:1px solid #879aa453;margin-top:9px;padding-top:7px}.arrow{font-size:17px}
+    .controls{display:flex;gap:6px;padding:0 22px 17px;align-items:center;justify-content:space-between}.controls .hint{font-size:11px;color:#778994}.controls button{border:1px solid #cbdbe1;background:#fff;color:#254b5a;cursor:pointer;font-size:16px;width:35px;height:35px;border-radius:50%}.controls button:hover{background:#e5f0f2}footer{background:#102231;color:#dce6e9;padding:24px max(20px,calc((100vw - 1160px)/2));font-size:12px}footer p{margin:0;max-width:750px}
+    @media(max-width:560px){.hero{padding-top:35px}.venue-head{padding:17px 16px 7px}.venue-note{margin:4px 16px 11px}.gallery{padding:5px 16px 13px}.photo-card{width:72vw;max-width:265px}.controls{padding:0 16px 14px}.jump{margin-bottom:18px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.photo-card{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="top"><a class="brand" href="./index.html">QLD Dinner Shortlist</a><a href="./index.html">比較ページに戻る ↗</a></header>
+  <section class="hero"><div class="eyebrow">Photo links · Brisbane & Gold Coast</div><h1>13候補を、<br>写真で見ていこう。</h1><p><strong>各施設12件、合計156件。</strong> 気になるカードをタップすると、掲載元の写真が新しいタブで開きます。</p><div class="nums"><span>BRISBANE · 6施設</span><span>GOLD COAST · 7施設</span><span>横にスワイプして見る →</span></div></section>
+  <p class="notice"><b>写真の見方</b>：カードは元画像へのリンクです。店内・料理・景色に加え、一部には同じショーの参考写真や会場の写真が含まれます。区別はカードのラベルで確認できます。</p>
+  <nav class="jump" aria-label="施設へ移動"><h2>気になる施設へジャンプ</h2><div class="jump-list" id="jump-list"></div></nav>
+  <main id="venues"><noscript>写真リンクを表示するにはJavaScriptを有効にしてください。<a href="./index.html">比較ページで見る</a></noscript></main>
+  <footer><p>写真の著作権は各掲載元に帰属します。この一覧には元写真を転載せず、掲載元へのリンクと写真の内容を表示しています。掲載元で写真が差し替えられることがあります。</p></footer>
+  <script src="./data.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      const all = Array.isArray(window.DINNER_CANDIDATES) ? window.DINNER_CANDIDATES : [];
+      const jump = document.getElementById('jump-list');
+      const root = document.getElementById('venues');
+      const notes = {
+        'lp-bne':'演出や料理の公式掲載画像です。すべてがブリスベンで撮影された写真とは限りません。',
+        'magic-table':'1～7はブリスベン会場。8～12はショーの宣伝・演出参考で、別地域の写真を含みます。',
+        'terrace':'7～12は2018年の過去掲載。現在の内装・席配置とは異なる可能性があります。',
+        'lina':'9～12は過去の季節メニューです。現在提供中の料理かどうかはメニューで確認してください。',
+        'lp-gc':'1～4は現地イベントの掲載画像。5～12はショーの会場 Catch の写真で、ショー開催中に撮影されたものとは限りません。',
+        'skypoint':'1～5はビストロ・料理、6～12は同じ施設内の展望台・イベント会場の写真です。'
+      };
+      function category(venue,index){
+        if(venue.id==='magic-table')return index<7?['ブリスベン会場','venue-photo']:['演出参考','reference'];
+        if(venue.id==='lp-gc')return index<4?['現地イベント','venue-photo']:['会場 Catch','venue-photo'];
+        if(venue.id==='skypoint')return index<5?['ビストロ・料理','venue-photo']:['展望台・会場','venue-photo'];
+        if(venue.id==='terrace')return index<6?['会場掲載','venue-photo']:['過去掲載','older'];
+        if(venue.id==='lina')return index<8?['会場・料理','venue-photo']:['旧メニュー','older'];
+        if(venue.id==='lp-bne')return ['公式の演出画像','reference'];
+        return ['店舗・料理・景色','venue-photo'];
+      }
+      function add(parent,tag,cl,txt){const el=document.createElement(tag);if(cl)el.className=cl;if(txt!==undefined)el.textContent=txt;parent.appendChild(el);return el}
+      let lastCity='';
+      all.forEach((v,index)=>{
+        if(v.city!==lastCity){const title=add(root,'h2','city-title'+(v.city==='goldcoast'?' gc':''),v.city==='brisbane'?'BRISBANE · 6施設':'GOLD COAST · 7施設');title.id=v.city;lastCity=v.city}
+        const nav=add(jump,'a','',v.name);nav.href='#photo-'+v.id;
+        const section=add(root,'section','venue'+(v.city==='goldcoast'?' gold':''));section.id='photo-'+v.id;section.setAttribute('aria-label',v.name+'の写真リンク');
+        const head=add(section,'div','venue-head'), name=add(head,'div');
+        add(name,'div','meta',(v.city==='brisbane'?'BRISBANE':'GOLD COAST')+' / '+String(index+1).padStart(2,'0'));
+        add(name,'h3','',v.name);
+        add(head,'span','count',v.photos.length+'件');
+        add(section,'p','venue-note',notes[v.id]||'');
+        const wrap=add(section,'div','gallery-wrap'), track=add(wrap,'div','gallery');
+        track.setAttribute('aria-label',v.name+'の写真リンク。横にスワイプできます');
+        v.photos.forEach((p,i)=>{
+          const u=new URL(p[1]);if(u.protocol!=='https:')return;
+          const cat=category(v,i);
+          const card=add(track,'a','photo-card '+cat[1]);
+          card.href=u.href;card.target='_blank';card.rel='noopener noreferrer';
+          card.setAttribute('aria-label',v.name+'の写真 '+(i+1)+'：'+p[0]+'。掲載元を新しいタブで開く');
+          const kicker=add(card,'div','photo-kicker');
+          add(kicker,'span','',cat[0]);add(kicker,'b','arrow','↗');
+          add(card,'div','photo-num',String(i+1).padStart(2,'0'));
+          add(card,'div','photo-caption',p[0]);
+          add(card,'div','photo-source',u.hostname.replace(/^www\./,''));
+        });
+        const controls=add(section,'div','controls');add(controls,'span','hint','← 横にスワイプ →');
+        const buttons=add(controls,'span');
+        [-1,1].forEach(dir=>{const b=add(buttons,'button','',dir<0?'←':'→');b.type='button';b.setAttribute('aria-label',v.name+'の写真を'+(dir<0?'左':'右')+'に送る');b.addEventListener('click',()=>track.scrollBy({left:dir*(track.querySelector('.photo-card').offsetWidth+12)*2,behavior:'smooth'}))});
+      });
+    })();
+  </script>
+</body>
+</html>
